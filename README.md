@@ -9,7 +9,7 @@ In low layer function call, there's no sub_call(unknown call), there just have s
 ![](./picture/low_layer_func.png)  
   
 Fix this low layer, the function unknown call will minus who call the low layer.  
-Use comments to describe the function functionality and return it to high layer, that will get a higher analysis accuracy.  
+Using comments to describe the function functionality and return it to high layer, that will get a higher analysis accuracy.  
 In the end, high layer will become low layer. Round and round, target function will easy to read.   
 
 ## Config
@@ -24,7 +24,7 @@ I suggest clearing JMPOUT in the call topology.
 ![](./picture/jmpout_check.png)  
 
 Then, choose REAI:func_analyze, start AI analysis layer by layer.  
-Each round wait time depend on the one, who is the longest waiting time in multithreading.   
+Each round wait time depend on the one, which is the longest waiting time in multithreading.   
 
 AI WORK:  
 
@@ -38,7 +38,7 @@ For the target function, you should press F5 by hand to refresh new name.
 ## Explain
 ### Orphan comments will appear here, why?
 
-with the pseudocode modify and refresh, it will be happen, but don't worry, the functional description has marked source function. When the pseudocode is sent to AI, he will know the description source.  
+With the pseudocode modify and refresh, it will be happen, but don't worry, the functional description has marked source function. When the pseudocode is sent to AI, he will know the description source.  
 
 ![](./picture/source_func_mark.png)
 
