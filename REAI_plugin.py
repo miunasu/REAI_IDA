@@ -145,7 +145,7 @@ def call_add_func(ea):
         raise Exception(f"[REAI] Exception during decompilation at {hex(ea)}: {e}")
 
 
-# jmpout fast check
+# exception code check
 def exception_code_check(ea, caller_ea_arg = 0):
     global exception_code_collection
     global processed_func
