@@ -50,7 +50,25 @@ With the pseudocode modify and refresh, it will be happen, but don't worry, the 
 
 When the large model is not intelligent enough, function functions cannot be accurately described, resulting in function name conflicts.  
 
+### Function handle
+Infact, they all depend on create and decompile **ALL** function. So you can create and decompile **ALL** function once by choose anyone when you are debug shellcode. Due to decompile all function that you may have to resolve many unimportant function's decompile problem.  
+Recommend REAI:exception_code_check, it's faster.  
+
+### Decompile fail
+Some time you may encounter decompile fail. Go to the address where decompilation failed.  
+
+![](./picture/exception.png)
+
+Press "F5" to get real failed address.
+
+![](./picture/fail_address.png)
+
+Go to the decompile fail function, press 'u' and 'p' to recreate the function.  
+
+![](./picture/recreate.png)  
+
 ## Support
 The plugin suport 7.4 between 9.x.  
 I use deepseek to analysis, so it's should support openai too.  
-If you have any question, please open an issue on GitHub.
+If you have any question, please open an issue on GitHub.  
+The plugin now has been integrated into the SUKI_IDA project(https://github.com/miunasu/SUKI_IDA).  

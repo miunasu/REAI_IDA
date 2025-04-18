@@ -142,7 +142,7 @@ def call_add_func(ea):
         c_func.refresh_func_ctext()
 
     except Exception as e:
-        raise Exception(f"[REAI] Exception during decompilation at {hex(ea)}: {e}")
+        raise Exception(f"[REAI] Exception during decompile at {hex(ea)}: {e}")
 
 
 # exception code check
