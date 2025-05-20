@@ -3,6 +3,16 @@ Use idapython create call topology, AI analysis function layer by layer. Get the
 
 利用idapython创建函数调用拓扑，AI逐层分析函数，最终总结目标函数的功能。  
 
+## Update
+### 2025.4.18
+1. Add function call_topology_print.  
+2. Improved processing logic.  
+
+### 2025.5.20
+~~Happy 520~~  
+
++ Now, We can talk with LLM in IDA.  
+
 ## Theory
 In low layer function call, there's no sub_call(unknown call), there just have system api, function with symbol and normal code.  
 
@@ -18,6 +28,7 @@ You need fill the config in code, including API_KEY, API_URL and MODEL.
 You can choose chinese or english prompt to get descriptions in different languages.  
 
 ## Example
+### Function deeping analyze
 First right click on target pseudocode view, choose REAI:exception_code_check.  
 I suggest clearing exception code in the call topology.  
 
@@ -34,10 +45,23 @@ Get call topology by choose REAI:call_topology_print.
 
 ![](./picture/get_call_topology.png)  
 
+
+
 For the target function, you should press F5 by hand to refresh new name.  
 
 ![](./picture/target_func_name.png)  
 
+
+### LLM conversation
+You can use ida pseudocode talk with LLM.
+First right click on target pseudocode view, choose REAI:conversation to get discussion function.  
+Then choose REAI.
+
+![](./picture/CLI.png)
+
+Now we can talk about the function.  
+
+![](./picture/talk_with_LLM.png)
 
 ## Explain
 ### Orphan comments will appear here, why?
